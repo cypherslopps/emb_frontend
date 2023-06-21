@@ -1,0 +1,32 @@
+.beforeStateTop,
+.beforeStateBottom {
+    position: relative;
+}
+
+.beforeStateTop:before {
+    top: -1px;
+}
+
+.beforeStateBottom:before {
+    bottom: -1px;
+}
+
+.beforeStateBottom:before,
+.beforeStateTop:before {
+    content: "";
+    z-index: 1;
+    --tw-gradient-from: #e5e7eb;
+    --tw-gradient-to: rgba(229,231,235,0);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: rgba(251,191,36,0);
+    --tw-gradient-stops: var(--tw-gradient-from),#459adb,var(--tw-gradient-to);
+    --tw-gradient-to: #e5e7eb;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    height: 1px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 66.666667%;
+}
